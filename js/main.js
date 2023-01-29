@@ -61,6 +61,54 @@
         ]
     });
 
+    // Scroll listener for scroll animations
+
+    // Get the container element
+    var aboutsection = document.querySelector(".about-section-start");
+
+    // Get the offset position of the container
+    var aboutsectionTop = aboutsection.offsetTop;
+
+    // Get the height of the container
+    var aboutsectionHeight = aboutsection.offsetHeight;
+
+    // Listen to the scroll event
+    window.addEventListener("scroll", function() {
+        // Get the current scroll position
+        var scrollTop = window.pageYOffset;
+    
+        // Calculate the percentage of the scroll position relative to the height of the container
+        var scrollPercent = (scrollTop - parallaxSectionTop) / parallaxSectionHeight;
+    
+        // Update the background-position of the container
+        aboutsection.style.backgroundPosition = "center " + (-50 * scrollPercent) + "%";
+    });
+
+
+    // window.addEventListener('scroll', () => {
+    //     document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+    // }, false);
+
+    // Services Slider
+    $('.services_slider_wrapper').owlCarousel({
+        loop: true,
+        dots: true,
+        autoplayHoverPause: true,
+        autoplay: true,
+        smartSpeed: 1000,
+        margin: 10,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                items: 2,
+            },
+            992: {
+                items: 3,
+            },
+        }
+    });
     
 })(jQuery);
-

@@ -14,6 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
 
     <!-- Icon Font Stylesheet -->
@@ -22,6 +23,7 @@
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
@@ -108,10 +110,11 @@
                     </div>
                     <div class="carousel-caption">
                         <div class="container">
-                            <div class="row justify-content-start">
+                            <div class="row w-100 justify-content-start">
                                 <div class="col-lg-8 text-start">
-                                    <p class="fs-4 btn-text-neo">Welcome to MILH</p>
-                                    <h1 class="display-1 btn-text-neo mb-5 animated slideInDown">Complete care solutions for plants, animals, and humans.</h1>
+                                    <p class="fs-4 text-primary btn-text-neo">Welcome to MIL Hub</p>
+                                    <h1 class="display-3 btn-text-neo mb-2 animated slideInDown">Supply Chain with Expert Coordination.</h1>
+                                    <p class="fs-3 mb-5 animated slideInDown">We offer a centralized point for coordinating of lifesciences products right from inception to delivery to their final consumer.</p>
                                     <a href="" class="btn btn-secondary btn-text-neo rounded-pill py-3 px-5 animated slideInRight">Explore More</a>
                                 </div>
                             </div>
@@ -127,9 +130,9 @@
                         <div class="container">
                             <div class="row justify-content-end">
                                 <div class="col-lg-8 text-end">
-                                    <p class="fs-4 btn-text-neo">Welcome to MILH</p>
-                                    <h1 class="display-1 btn-text-neo mb-5 animated slideInDown">Optimize your operations with our logistics Services.
-                                    </h1>
+                                    <p class="fs-4 btn-text-neo">Welcome to MIL Hub</p>
+                                    <h1 class="display-3 btn-text-neo mb-2 animated slideInDown">Comprehensive Life Sciences Solutions</h1>
+                                    <p class="fs-3 mb-5 animated slideInDown">Toll and Contract Manufacturing as well as Distribution of a Broad Range of Life Sciences Products.</p>
                                     <a href="" class="btn btn-secondary btn-text-neo  rounded-pill py-3 px-5 animated slideInLeft">Explore More</a>
                                 </div>
                             </div>
@@ -151,48 +154,83 @@
     </div>
     <!-- Carousel End -->
 
-
     <!-- About Start -->
-    <div class="container-xxl py-5">
+    <div class="container-fluid pb-5">
         <div class="container">
-            <div class="row g-5 align-items-end">
-                <div class="col-lg-6">
-                    <div class="row g-2">
-                        <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
-                            <div class="about-experience bg-secondary rounded">
-                                <h1 class="display-1 mb-0">5</h1>
-                                <small class="fs-5 text-white fw-bold">Years Experience</small>
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">About Us</p>
+                <h1 class="mb-5">What Drives Us.</h1>
+            </div>
+            <div class="row g-5">
+                <div class="d-lg-flex">
+                    <div class="col-lg-6">
+                        <div class="about-image fill h-100" data-aos="slide-right">
+                            <img src="./img/about-img.jpeg" class="img-fluid" alt="about image">
+                        </div>
+                    </div>
+                    <div class="about-main-text-container col-lg-6">
+                        <div class="main-about-container about-vision" data-aos="slide-left">
+                            <div class="inner-about-container">
+                                <p class="px-5 pt-3 fw-bold btn-text-neo">Our Vision</p>
+                                <p class="px-5 about-us-text text-white">Our Vision is to become the leading and most efficient toll manufacturing facility of life sciences products in  the region, while efficiently and effectively handling the logistics involved in the registration, importation, export and distribution of these products in the region</p>
+                            </div>
+                            <div class="icon-container">
+                                <img src="/img/about-icons-02.png" alt="">
                             </div>
                         </div>
-                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
-                            <img class="img-fluid rounded" src="img/service-1.jpg">
+                        <div class="main-about-container about-mission" data-aos="slide-left">
+                            <div class="inner-about-container bg">
+                                <p class="px-5 pt-3 fw-bold btn-text-neo">Our Mission</p>
+                                <p class="px-5 about-us-text text-white">Our mission is to render our quality services to government, importers and suppliers of these goods in order to avoid duplication of resources.</p>
+                            </div>
+                            <div class="icon-container">
+                                <img src="/img/about-icons-03.png" alt="">
+                            </div>
                         </div>
-                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
-                            <img class="img-fluid rounded" src="img/service-2.jpg">
-                        </div>
-                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
-                            <img class="img-fluid rounded" src="img/service-3.jpg">
+                        <div class="main-about-container about-values" data-aos="slide-left">
+                            <div class="inner-about-container bg">
+                                <p class="px-5 pt-3 fw-bold text-dark">Our Core Values</p>
+                                <p class="px-5 about-us-text text-dark">We are Passionate about what we do and commit to timely and efficient delivery of all our products and services to meet our customers needs.</p>
+                            </div>
+                            <div class="icon-container">
+                                <img src="/img/about-icons-01.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="section-title bg-white text-start text-primary pe-3">About Us</p>
-                    <h1 class="mb-4">Know About Our Bussiness & Our History</h1>
-                    <p class="mb-4">We are dedicated to providing quality services to government, importers, and suppliers of goods With an aim of become the leading and most efficient toll manufacturing facility of life sciences products in the region. Our team of experts is dedicated to handling the logistics involved in the registration, importation, export, and distribution of these products in the region. </p>
-                    <div class="row g-5 pt-2 mb-5">
-                        <div class="col-sm-6">
-                            <img class="img-fluid mb-4" src="img/service.png" alt="">
-                            <h5 class="mb-3">Dedicated Services</h5>
-                            <span>Logistics and industrial services.</span>
-                        </div>
-                        <div class="col-sm-6">
-                            <img class="img-fluid mb-4" src="img/product.png" alt="">
-                            <h5 class="mb-3">Organic Products</h5>
-                            <span>Natural products for Animals, plants and health care.</span>
+                
+                <!-- <div class="col-lg-6 ">
+                    <div class="about-image animated slideInLeft">
+                        <img src="./img/about-img.jpeg" alt="about image">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-wow-delay="0.5s">
+                    <div class="ps-5 row ">
+                        <p class="section-title text-primary text-center text-primary pe-3">About Us</p>
+                        <h1 class="mb-4 text-white text-center">What Drives Us</h1>
+                    </div>
+                    <div class="about-visual-container wow slideInRight" data-wow-delay="0.1s">
+                        <img src="./img/vision.png" alt="vision">
+                        <div class="about-us-text py-4 ps-5">
+                            <h1 class="display-6 btn-text-neo">OUR VISION</h1>
+                            <p class="text-white">Our Vision is to become the leading and most efficient toll manufacturing facility of life sciences products in  the region, while efficiently and effectively handling the logistics involved in the registration, importation, export and distribution of these products in the region</p>
                         </div>
                     </div>
-                    <a class="btn btn-secondary btn-text-neo rounded-pill py-3 px-5" href="">Explore More</a>
-                </div>
+                    <div class="about-visual-container wow slideInRight" data-wow-delay="0.3s">
+                        <img src="./img/mission.png" alt="mission">
+                        <div class="about-us-text py-4 ps-5">
+                            <h1 class=" text-white display-6">OUR MISSION</h1>
+                            <span class="text-white">Our mission is to render our quality services to government, importers and suppliers of these goods in order to avoid duplication of resources.</span>
+                        </div>
+                    </div>
+                    <div class="about-visual-container wow slideInRight" data-wow-delay="0.5s">
+                        <img src="/img/values.png" alt="">
+                        <div class="about-us-text py-4 ps-5">
+                            <h1 class="text-dark display-6">OUR VALUES</h1>
+                            <span class="text-dark">We are Passionate about what we do and commit to timely and efficient delivery of all our products and services to meet our customers needs.</span>
+                        </div>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -499,8 +537,8 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item rounded p-4">
                         <img class="img-fluid rounded mb-4" src="img/team-1.jpg" alt="">
-                        <h5>Shadia Namuli</h5>
-                        <p class="text-primary">Founder</p>
+                        <h5>Fiona Migadde</h5>
+                        <p class="text-primary">Executive Chair</p>
                         <div class="d-flex justify-content-center">
                             <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -511,8 +549,8 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item rounded p-4">
                         <img class="img-fluid rounded mb-4" src="img/team-2.jpg" alt="">
-                        <h5>Dr. Mukiibi Jordan</h5>
-                        <p class="text-primary">Veterinarian</p>
+                        <h5>Edward Martin</h5>
+                        <p class="text-primary">Director</p>
                         <div class="d-flex justify-content-center">
                             <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -523,8 +561,8 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item rounded p-4">
                         <img class="img-fluid rounded mb-4" src="img/team-3.jpg" alt="">
-                        <h5>Jessie Nakimbugwe</h5>
-                        <p class="text-primary">Project Manager</p>
+                        <h5>Avril Martin</h5>
+                        <p class="text-primary">Director</p>
                         <div class="d-flex justify-content-center">
                             <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -539,7 +577,7 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
+    <!-- <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="section-title bg-white text-center text-primary px-3">Testimonial</p>
@@ -584,7 +622,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Testimonial End -->
 
 
@@ -636,13 +674,13 @@
 
 
     <!-- Copyright Start -->
-    <div class="container-fluid bg-dark text-body copyright py-4">
+    <div class="container-fluid bg-primary text-body copyright py-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-primary text-center text-md-start mb-3 mb-md-0">
+                <div class="col-md-6 text-dark text-center text-md-start mb-3 mb-md-0">
                     &copy; <a class="fw-semi-bold text-light" href="#">2023 Matugga Industries & Logistics Hub LTD</a>, All Right Reserved.
                 </div>
-                <div class="col-md-6 text-primary text-center text-md-end">
+                <div class="col-md-6 text-dark text-center text-md-end">
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                     <!-- Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a> -->
                     Designed By <a class="fw-semi-bold text-light" href="#">Jitu Tech</a>
@@ -667,6 +705,14 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/parallax/parallax.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 3000,
+            once: false,
+            offset: 120,
+        });
+    </script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
