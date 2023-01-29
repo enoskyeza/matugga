@@ -171,7 +171,7 @@
 }
 
 @media (max-width: 768px) {
-    #header-carousel .carousel-item {
+    #header-carousel .carousel-img-container {
         position: relative;
         min-height: 450px;
     }
@@ -508,7 +508,7 @@
 .carousel-img {
     position: relative;
     z-index: 1;
-    animation: zoomIn 2s ease-in-out;
+    animation: zoomIn 2s ease-in;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
   }
@@ -546,6 +546,27 @@ to {
     top: 0px;
     left: 30%;
   }
+
+@media (max-width: 768px) {
+    .dark-overlay-left {
+        position: absolute;
+        z-index: 1;
+        background: rgb(0,0,0,0.4);
+        height: 100%;  
+        width: 100%;
+        top: 0px;
+    }
+    
+    .dark-overlay-right {
+        position: absolute;
+        z-index: 1;
+        background: rgb(0,0,0,0.4);
+        height: 100%;  
+        width: 100%;
+        top: 0px;
+        left: 0px;
+    }
+}
 
 .sliding-In-Right {
     animation-name: slidingInRight;
