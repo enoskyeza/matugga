@@ -187,14 +187,16 @@
         height: 100%;
         object-fit: cover;
     }
+}
 
-    .carousel-caption {
-        width: 80%;
-        align-items: center;
+
+@media (max-width: 425px) {
+    .carousel-caption h1{
+        padding-bottom: 20px;
     }
 
-    .carousel-caption h1{
-        font-size: 40px
+    .carousel-copy{
+        display: none;
     }
 }
 
