@@ -310,7 +310,7 @@
     z-index: 1;
 }
 
-.service-item .service-img::after {
+/* .service-item .service-img::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -320,7 +320,7 @@
     background: #FFFFFF;
     transition: .5s ease-out;
     z-index: 2;
-}
+} */
 
 .service-item:hover .service-img::after {
     width: 0;
@@ -345,8 +345,8 @@
     transition: .5s;
 }
 
-.service-item:hover .service-text h5,
-.service-item:hover .service-text p {
+.service-text h5,
+.service-text p {
     color: #FFFFFF;
 }
 
