@@ -61,54 +61,31 @@
         ]
     });
 
-    // Scroll listener for scroll animations
-
-    // Get the container element
-    var aboutsection = document.querySelector(".about-section-start");
-
-    // Get the offset position of the container
-    var aboutsectionTop = aboutsection.offsetTop;
-
-    // Get the height of the container
-    var aboutsectionHeight = aboutsection.offsetHeight;
-
-    // Listen to the scroll event
-    window.addEventListener("scroll", function() {
-        // Get the current scroll position
-        var scrollTop = window.pageYOffset;
-    
-        // Calculate the percentage of the scroll position relative to the height of the container
-        var scrollPercent = (scrollTop - parallaxSectionTop) / parallaxSectionHeight;
-    
-        // Update the background-position of the container
-        aboutsection.style.backgroundPosition = "center " + (-50 * scrollPercent) + "%";
-    });
-
-
-    // window.addEventListener('scroll', () => {
-    //     document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-    // }, false);
-
-    // Services Slider
-    $('.services_slider_wrapper').owlCarousel({
-        loop: true,
-        dots: true,
-        autoplayHoverPause: true,
+    // Services slider
+    var slider = tns({
+        container: '.my-slider',
+        items: 1,
+        // slideby: 'page',
+        speed: 700,
         autoplay: true,
-        smartSpeed: 1000,
-        margin: 10,
-        nav: false,
+        nav: true,
+        navPosition: 'bottom',
+        // autoPlayTimeout: 7000,
+        autoplayButtonOutput: false,
+        controlsContainer: '#controls',
+        prevButton: '.previous',
+        nextButton: '.next',
         responsive: {
-            0: {
-                items: 1,
+            640: {
+              items: 2
             },
-            768: {
-                items: 2,
+            700: {
+              gutter: 0
             },
-            992: {
-                items: 3,
-            },
-        }
-    });
-    
+            900: {
+              items: 3
+            }
+          }
+      });
+
 })(jQuery);

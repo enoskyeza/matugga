@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -256,7 +258,7 @@
                             <div class="col-sm-6 wow slideInUp" data-wow-delay="0.1s">
                                 <div class="text-center bg-primary py-5 px-4">
                                     <img class="img-fluid mb-4" src="img/experience.png" alt="">
-                                    <h1 class="display-6 btn-text-neo" data-toggle="counter-up">5</h1>
+                                    <h1 class="display-6 btn-text-neo" data-toggle="counter-up">55</h1>
                                     <span class="fs-5 fw-semi-bold text-dark">Years Experience</span>
                                 </div>
                             </div>
@@ -328,13 +330,13 @@
     <!-- Service Start -->
     <div class="container-fluid service-section-bg  py-5">
         <div class="container">
-            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="section-title bg-white text-center text-primary px-3">Our Services</p>
                 <h1 class="mb-5">Services That We Offer For Entrepreneurs</h1>
             </div>
-            <div class="row gy-5 gx-5 justify-content-center">
-                <div class="service-slider-container d-flex">
-                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-slider-section">
+                <div class="service-slider-container my-slider">
+                    <div class="pt-5 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item d-flex h-100">
                             <div class="service-img">
                                 <img class="img-fluid" src="img/service-3.jpg" alt="">
@@ -349,7 +351,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="pt-5 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="service-item d-flex h-100">
                             <div class="service-img">
                                 <img class="img-fluid" src="img/service-2.jpg" alt="">
@@ -364,7 +366,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="pt-5 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item d-flex h-100">
                             <div class="service-img">
                                 <img class="img-fluid" src="img/service-6.jpg" alt="">
@@ -379,7 +381,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="pt-5 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item d-flex h-100">
                             <div class="service-img">
                                 <img class="img-fluid" src="img/service-4.jpg" alt="">
@@ -394,7 +396,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="pt-5 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item d-flex h-100">
                             <div class="service-img">
                                 <img class="img-fluid" src="img/service-5.jpg" alt="">
@@ -410,7 +412,16 @@
                         </div>
                     </div>
                 </div>
+                <div id="controls" class="d-flex w-100">
+                    <button class="btn btn-square rounded-circle previous">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button class="btn btn-square ms-auto rounded-circle next">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
             </div>
+
         </div>
     </div>
     <!-- Service End -->
@@ -740,6 +751,7 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/parallax/parallax.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
