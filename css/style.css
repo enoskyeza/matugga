@@ -716,54 +716,21 @@ h1 {
 /* Imported slider styles */
 .service-slider-container {
     padding-top: 10px;
-}
-.services_wrapper_boxed {
-    background: #FFFFFF;
-    box-shadow: -5px -6px 24px rgb(0 0 0 / 2%), 8px 0px 24px rgb(0 0 0 / 9%);
-    border-radius: 8px;
-    padding: 10px 15px 25px 15px;
-    position: relative;
-    text-align: center;
-    margin: 30px 10px;
-}
-
-.services_wrapper_boxed img {
-    width: 110px !important;
-    margin: 0 auto;
-}
-
-.services_wrapper_boxed p {
-    padding-top: 25px;
-    line-height: 28px;
-    border-bottom: 1px solid #e4e4e4;
-    padding-bottom: 20px;
+    background: #151C42;
 }
 
 
-.slider_dots.owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top: 0px;
+/* Backgrounds */
+
+.service-section-b {
+    background-image: url("../img/try-01.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
-.slider_dots.owl-theme .owl-dots .owl-dot span {
-    width: 15px;
-    height: 15px;
-    margin: 5px 5px;
-    background: #e03c3366;
-    display: block;
-    backface-visibility: visible;
-    transition: opacity .2s ease;
-    border-radius: 30px;
+.gallery-section-b {
+    background-image: url("../img/try-02.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
 }
-
-.slider_dots.owl-theme .owl-dots .owl-dot.active span,
-.slider_dots.owl-theme .owl-dots .owl-dot:hover span {
-    background:#151C42 ;
-}
-
-.service-slider-container-inner {
-    padding-top: 100px;
-}
-
-
-/* Sliding Animations */
 
