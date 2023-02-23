@@ -10,8 +10,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -24,8 +24,8 @@
             $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
         }
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -60,32 +60,5 @@
             '<i class="bi bi-chevron-right"></i>'
         ]
     });
-
-    // Services slider
-    var slider = tns({
-        container: '.my-slider',
-        items: 1,
-        // slideby: 'page',
-        speed: 700,
-        autoplay: true,
-        nav: true,
-        navPosition: 'bottom',
-        // autoPlayTimeout: 7000,
-        autoplayButtonOutput: false,
-        controlsContainer: '#controls',
-        prevButton: '.previous',
-        nextButton: '.next',
-        responsive: {
-            640: {
-              items: 2
-            },
-            700: {
-              gutter: 0
-            },
-            900: {
-              items: 3
-            }
-          }
-      });
 
 })(jQuery);
