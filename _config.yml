@@ -1,7 +1,6 @@
-# Serve all static assets with a cache lifetime of 1 year (in seconds)
-# This includes images, stylesheets, scripts, and fonts
-# Adjust the max-age value as needed
 defaults:
-  - scope:
+  -
+    scope:
       path: ""
-      type: "max-age=31536000"
+    values:
+      cache_control: "public, max-age=31536000"
