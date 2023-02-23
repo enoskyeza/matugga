@@ -39,7 +39,7 @@ self.addEventListener('fetch', function(event) {
             const responseToCache = response.clone();
 
             const cacheControlHeader = new Headers();
-            cacheControlHeader.append('Cache-Control', 'max-age=31536000,public');
+            cacheControlHeader.append('Cache-Control', 'max-age=31536000, public');
 
             const newResponse = new Response(responseToCache.body, {
               status: response.status,
