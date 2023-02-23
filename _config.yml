@@ -1,6 +1,0 @@
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      cache_control: "public, max-age=31536000"
