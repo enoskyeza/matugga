@@ -769,3 +769,31 @@ h1 {
     background-position: center top;
 }
 
+
+/* FARMERS CENTER */
+.fc-img-container{
+    position: relative;
+    display: flex;
+    justify-content: end;
+
+}
+
+fc-image{
+
+}
+
+.image-block {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    top: -30px;
+    right: 320px;
+    height:400px;
+    width:150px
+}
+
+@media (min-width: 720px) {
+    .image-block {
+        display: block;
+    }
+}
